@@ -7,6 +7,11 @@
 	font-family: 'inconsolata';
 }
 
+body{
+	background-image: url('assets/images/background-tablet.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+
 .wrapper {
 	min-width: 320px;
 	width: 375px;
@@ -17,7 +22,7 @@
 	justify-content: center;
 	gap: 5px;
 	padding: 30px 20px;
-	background-image: url('/assets/images/background-tablet.png');
+	background-image: url('assets/images/background-tablet.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
