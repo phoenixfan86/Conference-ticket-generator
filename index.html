@@ -17,12 +17,12 @@
 	</head>
 	<body>
 		<!-- Form starts -->
-		<div class="wrapper">
+		<div class="form-wrapper">
 			<div class="logo">
 				<a href="#"><img src="./assets/images/logo-full.svg" alt="" /></a>
 			</div>
 
-			<div class="form-title">
+			<div class="title">
 				<h3>Your Journey to Coding Conf 2025 Starts Here!</h3>
 				<p>Secure your spot at next year's biggest coding conference.</p>
 			</div>
@@ -77,26 +77,56 @@
 
 				<button type="submit">Generate My Ticket</button>
 			</div>
-
-			<div class="ticket-img"><img src="" alt="" id="ticket-img" /></div>
-
 			<!-- Form ends -->
-
-			<div class="ticket-tab">
-				<!-- Generated tickets starts -->
-				Congrats,
-				<!-- Full Name -->! Your ticket is ready. We've emailed your ticket to
-				<!-- Email Address -->
-				and will send updates in the run up to the event. Coding Conf Jan 31,
-				2025 / Austin, TX
-				<!-- Generated tickets ends -->
+		</div>
+		<!-- Ticket start -->
+		<div class="ticket-wrapper">
+			<div class="logo">
+				<a href="#"><img src="./assets/images/logo-full.svg" alt="" /></a>
 			</div>
 
-			<div class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
+			<div class="ticket-title title">
+				<h3 class="title-gradient">
+					Congrats,<span id="name"></span>! Your ticket is ready.
+				</h3>
+				<p>
+					We've emailed your ticket to <span id="email"></span> and will send
+					updates in the run upto the event.
+				</p>
 			</div>
+			<!-- Generated tickets starts -->
+			<div class="ticket">
+				<div class="ticket-content">
+					<div class="ticket-header">
+						<div class="ticket-logo">
+							<img src="assets/images/logo-mark.svg" alt="" />
+						</div>
+						<div class="title">
+							<h3>Coding Conf</h3>
+							<p>Jan 31, 2025 / Austin, TX</p>
+						</div>
+					</div>
+					<div class="owner-content">
+						<div class="ticket-img">
+							<img src="" alt="" id="ticket-img" />
+						</div>
+						<div class="owner-name">
+							<h4 id="owner-name"></h4>
+							<p id="email"></p>
+						</div>
+					</div>
+				</div>
+				<div class="ticket-number">
+					<h4 id="ticket-number"></h4>
+				</div>
+			</div>
+			<!-- Generated tickets ends -->
+		</div>
+		<!-- Ticket end -->
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+			Coded by <a href="#">Your Name Here</a>.
 		</div>
 		<script src="js/upload-file.js"></script>
 	</body>
