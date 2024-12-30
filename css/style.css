@@ -13,7 +13,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
-	background-image: url('assets/images/background-tablet.png');
+	background-image: url('../assets/images/background-tablet.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -28,9 +28,10 @@ body {
 	justify-content: center;
 	gap: 5px;
 	padding: 30px 5px;
-	background-image: url('assets/images/background-tablet.png');
+	background: inherit;
+	/*background-image: url('assets/images/background-tablet.png');
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 
 .logo img {
