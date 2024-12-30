@@ -28,9 +28,9 @@ body {
 	justify-content: center;
 	gap: 5px;
 	padding: 30px 5px;
-	/*background-image: url('assets/images/background-tablet.png');
+	background-image: url('assets/images/background-tablet.png');
 	background-size: cover;
-	background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 }
 
 .logo img {
