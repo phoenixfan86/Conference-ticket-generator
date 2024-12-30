@@ -8,12 +8,13 @@
 }
 
 body {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
-	background-image: url('https://github.com/phoenixfan86/Conference-ticket-generator/raw/main/assets/images/background-tablet.png');
+	background-image: url('../assets/images/background-tablet.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
