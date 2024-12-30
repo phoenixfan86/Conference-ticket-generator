@@ -68,10 +68,22 @@ p {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 	gap: 15px;
 	background-color: hsl(248, 70%, 14%);
 	border-radius: 14px;
 	margin: 15px 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+.upload-area:hover {
+	border-color: hsl(252, 6%, 70%);
+}
+
+.upload-area.dragover {
+	border-color: hsl(252, 6%, 70%);
+	background-color: hsl(252, 6%, 90%);
 }
 
 .input-logo {
@@ -87,11 +99,13 @@ p {
 .input-logo img {
 	width: 25px;
 	height: 25px;
+	object-fit: cover;
 }
 
 .upload-area p {
 	font-size: 14px;
 }
+
 .file-input {
 	position: absolute;
 	width: 100%;
@@ -151,6 +165,12 @@ input::placeholder {
 	color: hsl(252, 6%, 83%);
 }
 
+.input-item:focus,
+.input-item:not(:placeholder-shown) {
+	font-size: 20px;
+	color: hsl(252, 6%, 83%);
+}
+
 button {
 	width: 100%;
 	height: 50px;
@@ -160,6 +180,15 @@ button {
 	font-size: 16px;
 	font-weight: 900;
 	background: hsl(7, 86%, 67%);
+}
+button:hover {
+	background: hsl(7, 71%, 60%);
+}
+
+.ticket-img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
 }
 
 .ticket-tab {
@@ -179,6 +208,7 @@ button {
 		max-width: 1440px;
 		background-image: url('/assets/images/background-desktop.png');
 		background-size: cover;
+		padding: 0 100px;
 	}
 
 	.wrapper {

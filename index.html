@@ -29,13 +29,14 @@
 
 			<div class="upload-box">
 				<h4>Upload Avatar</h4>
-				<div class="upload-area">
+				<div class="upload-area" id="upload-area">
 					<div class="input-logo">
-						<img src="./assets/images/icon-upload.svg" alt="" />
+						<img src="./assets/images/icon-upload.svg" alt="" id="preview" />
 						<input
 							type="file"
 							accept="image/jpeg, image/png"
 							class="file-input"
+							id="file-input"
 						/>
 					</div>
 					<p>Drag and drop or click to upload</p>
@@ -58,6 +59,8 @@
 					class="input-item"
 					value=""
 					placeholder="example@email.com"
+					onfocus="this.placeholder = ''"
+					onblur="this.placeholder = 'enter your text'"
 				/>
 
 				<label for="github-username">GitHub Username</label>
@@ -68,10 +71,14 @@
 					value=""
 					class="input-item"
 					placeholder="@yourusername"
+					onfocus="this.placeholder = ''"
+					onblur="this.placeholder = 'enter your text'"
 				/>
 
 				<button type="submit">Generate My Ticket</button>
 			</div>
+
+			<div class="ticket-img"><img src="" alt="" id="ticket-img" /></div>
 
 			<!-- Form ends -->
 
@@ -91,5 +98,6 @@
 				>. Coded by <a href="#">Your Name Here</a>.
 			</div>
 		</div>
+		<script src="js/upload-file.js"></script>
 	</body>
 </html>
