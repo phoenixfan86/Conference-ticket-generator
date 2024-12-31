@@ -209,12 +209,16 @@ button:hover {
 
 .ticket {
 	width: 100%;
+	height: 180px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
 	border: 2px solid hsl(7, 71%, 60%);
 	border-radius: 8px;
+}
+.ticket h3 {
+	font-size: 22px;
 }
 
 .ticket-content {
@@ -223,19 +227,41 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	gap: 20px;
 	padding: 10px;
 }
 
 .ticket-header {
+	width: 100%;
+	height: 70px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 30px;
+}
+
+.ticket-logo img {
+	width: 30px;
+	height: 30px;
+}
+
+.ticket-header > .title {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: flex-start;
+}
+
+.ticket-header > .title > p {
+	font-size: 16px;
 }
 
 .owner-content {
 	width: 100%;
-	height: 50px;
+	height: 70px;
 	display: flex;
 }
 
@@ -243,10 +269,6 @@ button:hover {
 	width: 45px;
 	height: 50px;
 	border-radius: 5px;
-}
-
-.ticket h3 {
-	font-size: 22px;
 }
 
 .ticket-number {
