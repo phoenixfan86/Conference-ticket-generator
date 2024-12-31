@@ -8,7 +8,7 @@ function updatePreview(file) {
 	const reader = new FileReader()
 	reader.onload = e => {
 		preview.src = e.target.result // Оновлення зображення
-		//ticketImg.src = e.target.result
+		ticketImg.src = e.target.result
 	}
 	reader.readAsDataURL(file)
 }

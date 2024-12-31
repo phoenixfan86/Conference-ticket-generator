@@ -22,7 +22,7 @@ body {
 
 .form-wrapper {
 	min-width: 375px;
-	display: none;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -89,19 +89,20 @@ p {
 }
 
 .input-logo {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: hsl(245, 15%, 28%);
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .input-logo img {
-	width: 25px;
-	height: 25px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
+	border-radius: 5px;
 }
 
 .upload-area p {
@@ -187,12 +188,6 @@ button:hover {
 	background: hsl(7, 71%, 60%);
 }
 
-.ticket-img {
-	width: 50px;
-	height: 50px;
-	border: 1px solid red;
-}
-
 .ticket-wrapper {
 	min-width: 320px;
 	width: 375px;
@@ -214,13 +209,12 @@ button:hover {
 
 .ticket {
 	width: 100%;
-	height: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	border: 1px solid hsl(7, 71%, 60%);
-	border-radius: 5px;
+	border: 2px solid hsl(7, 71%, 60%);
+	border-radius: 8px;
 }
 
 .ticket-content {
@@ -229,11 +223,34 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.ticket-header {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 
+.owner-content {
+	width: 100%;
+	height: 50px;
+	display: flex;
+}
+
+.ticket-img img {
+	width: 45px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.ticket h3 {
+	font-size: 22px;
+}
+
 .ticket-number {
-	width: 40px;
+	width: 50px;
 	height: 100%;
 	border-left: 1px dashed hsl(252, 6%, 70%);
 }
@@ -248,12 +265,12 @@ button:hover {
 
 @media (max-width: 1445px) {
 	body {
-		/*background-image: url('/assets/images/background-desktop.png');
-		background-size: cover;*/
+		*background-image: url('/assets/images/background-desktop.png');
+		background-size: cover;
 		padding: 0 100px;
 	}
 
-	.wrapper {
+	.form-wrapper .ticket-wrapper {
 		width: 50%;
 		background-image: none;
 		margin: 0 auto;
