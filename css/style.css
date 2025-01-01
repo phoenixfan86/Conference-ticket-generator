@@ -352,7 +352,6 @@ button:hover {
 @media (max-width: 1445px) {
 	body {
 		width: 100%;
-		height: 100%;
 		background-image: url('/assets/images/background-desktop.png');
 		background-size: cover;
 		padding: 0 70px;
