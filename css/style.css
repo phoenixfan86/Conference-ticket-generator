@@ -14,7 +14,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 30px;
+	padding: 5px;
 	background-image: url('../assets/images/background-tablet.png');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -22,11 +22,12 @@ body {
 
 .form-wrapper {
 	min-width: 375px;
-	display: none;
+	height: 100%;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 5px;
+	gap: 15px;
 	padding: 30px 5px;
 }
 
@@ -54,7 +55,7 @@ p {
 
 .upload-box {
 	width: 100%;
-	height: 500px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -179,7 +180,7 @@ button {
 	height: 50px;
 	border-radius: 14px;
 	padding: 5px 10px;
-	margin-top: 8px;
+	margin: 8px 0 20px 0;
 	font-size: 16px;
 	font-weight: 900;
 	background: hsl(7, 86%, 67%);
@@ -191,8 +192,8 @@ button:hover {
 .ticket-wrapper {
 	min-width: 320px;
 	width: 375px;
-	height: 850px;
-	display: flex;
+	height: 100%;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -207,9 +208,13 @@ button:hover {
 	color: transparent;
 }
 
+.span {
+	color: hsl(7, 86%, 67%);
+}
+
 .ticket {
 	width: 100%;
-	height: 180px;
+	height: 170px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -251,7 +256,7 @@ button:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 30px;
+	gap: 5px;
 }
 
 .ticket-logo img {
@@ -269,13 +274,27 @@ button:hover {
 }
 
 .ticket-header > .title > p {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .owner-content {
 	width: 100%;
 	height: 70px;
 	display: flex;
+	align-items: start;
+	justify-content: space-around;
+	gap: 5px;
+}
+
+.owner-name h4 {
+	font-size: 22px;
+	font-weight: normal;
+	color: hsl(0, 0%, 100%);
+	margin-bottom: 5px;
+}
+
+.owner-name P {
+	font-style: 14px;
 }
 
 .ticket-img img {
@@ -297,7 +316,7 @@ button:hover {
 	text-align: center;
 	rotate: 90deg;
 	color: hsl(252, 6%, 70%);
-	font-size: 24px;
+	font-size: 22px;
 	letter-spacing: 5px;
 }
 
@@ -332,9 +351,11 @@ button:hover {
 
 @media (max-width: 1445px) {
 	body {
-		*background-image: url('/assets/images/background-desktop.png');
+		width: 100%;
+		height: 100%;
+		background-image: url('/assets/images/background-desktop.png');
 		background-size: cover;
-		padding: 0 100px;
+		padding: 0 70px;
 	}
 
 	.form-wrapper .ticket-wrapper {

@@ -49,13 +49,19 @@
 
 			<div class="input-content">
 				<label for="user-name">Full Name</label>
-				<input type="text" name="" id="user-name" class="input-item" value="" />
+				<input
+					type="text"
+					name=""
+					id="owner-name"
+					class="input-item"
+					value=""
+				/>
 
 				<label for="user-email">Email Address</label>
 				<input
 					type="email"
 					name=""
-					id="user-email"
+					id="owner-email"
 					class="input-item"
 					value=""
 					placeholder="example@email.com"
@@ -75,7 +81,7 @@
 					onblur="this.placeholder = 'enter your text'"
 				/>
 
-				<button type="submit">Generate My Ticket</button>
+				<button type="submit" id="submit">Generate My Ticket</button>
 			</div>
 			<!-- Form ends -->
 		</div>
@@ -87,10 +93,12 @@
 
 			<div class="ticket-title title">
 				<h3 class="title-gradient">
-					Congrats,<span id="name"></span>! Your ticket is ready.
+					Congrats, <span id="name">Jonatan Kristof</span>! Your ticket is
+					ready.
 				</h3>
 				<p>
-					We've emailed your ticket to <span id="email"></span> and will send
+					We've emailed your ticket to
+					<span class="span" id="email">jonatan@email.com</span> and will send
 					updates in the run upto the event.
 				</p>
 			</div>
@@ -112,8 +120,8 @@
 								<img src="" alt="" id="ticket-img" />
 							</div>
 							<div class="owner-name">
-								<h4 id="owner-name"></h4>
-								<p id="email"></p>
+								<h4 id="owner-name">Jonatan Kristof</h4>
+								<p id="email">jonatan@email.com</p>
 							</div>
 						</div>
 					</div>
@@ -130,6 +138,6 @@
 			<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
 			Coded by <a href="#">Your Name Here</a>.
 		</div>
-		<script src="js/upload-file.js"></script>
+		<script src="js/ticket.js"></script>
 	</body>
 </html>

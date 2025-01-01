@@ -56,3 +56,7 @@ uploadArea.addEventListener('click', () => {
 		fileInput.click()
 	}
 })
+
+const ownerName = document.getElementById('owner-name')
+const ownerEmail = document.getElementById('owner-Email')
+const ownerGithub = document.getElementById('github-username')
