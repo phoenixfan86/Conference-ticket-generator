@@ -22,7 +22,7 @@ body {
 
 .form-wrapper {
 	min-width: 375px;
-	height: 100%;
+	height: 850px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
