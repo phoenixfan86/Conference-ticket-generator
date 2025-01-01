@@ -15,7 +15,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 5px;
-	background-image: url('/assets/images/background-tablet.png');
+	background-image: url('../assets/images/background-tablet.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -352,7 +352,7 @@ button:hover {
 @media (max-width: 1445px) {
 	body {
 		width: 100%;
-		background-image: url('/assets/images/background-desktop.png');
+		background-image: url('../assets/images/background-desktop.png');
 		background-size: cover;
 		padding: 0 70px;
 	}
