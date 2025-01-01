@@ -22,7 +22,7 @@ body {
 
 .form-wrapper {
 	min-width: 375px;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -197,7 +197,7 @@ button:hover {
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
-	padding: 30px 5px;
+	padding: 30px 15px;
 }
 
 .title-gradient {
@@ -214,11 +214,24 @@ button:hover {
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	border: 2px solid hsl(7, 71%, 60%);
-	border-radius: 8px;
+	padding: 1px;
+	background: linear-gradient(-45deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+	overflow: hidden;
+	border-radius: 6px;
 }
+
 .ticket h3 {
 	font-size: 22px;
+}
+
+.content-wrapper {
+	width: 99%;
+	height: 99%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(90deg, hsl(248, 70%, 10%), hsl(245, 19%, 35%));
+	border-radius: 6px;
 }
 
 .ticket-content {
@@ -272,9 +285,41 @@ button:hover {
 }
 
 .ticket-number {
-	width: 50px;
+	width: 90px;
 	height: 100%;
-	border-left: 1px dashed hsl(252, 6%, 70%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border-left: 2px dashed hsl(252, 6%, 70%);
+}
+.ticket-number h4 {
+	text-align: center;
+	rotate: 90deg;
+	color: hsl(252, 6%, 70%);
+	font-size: 24px;
+	letter-spacing: 5px;
+}
+
+.ticket-number::before,
+.ticket-number::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 23px;
+	border: 2px solid hsl(7, 86%, 67%);
+	border-radius: 50%;
+	background: hsl(248, 70%, 10%);
+}
+
+.ticket-number::before {
+	top: -10px;
+	left: -15px;
+}
+
+.ticket-number::after {
+	bottom: -10px;
+	left: -15px;
 }
 
 .attribution {
