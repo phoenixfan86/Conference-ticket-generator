@@ -19,13 +19,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop screenshot](../assets/screenshot
+![Desktop screenshot](./assets/screenshot
 /screencapture_desktop.png)
 
-![Mobile screenshot](../assets/screenshot
+![Mobile screenshot](./assets/screenshot
 /screenshot-mobile-1.jpg)
 
-![Mobile screenshot 2](../assets/screenshot
+![Mobile screenshot 2](./assets/screenshot
 /screenshot-mobile-2.jpg)
 
 ### Links
