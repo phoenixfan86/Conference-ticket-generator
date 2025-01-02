@@ -19,18 +19,17 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop screenshot(./assets/screenshot
-/screencapture_desktop.png)]
+Desktop screenshot ../assets/screenshot
+/screencapture_desktop.png
 
-![Mobile screenshot](./assets/screenshot
-/screenshot-mobile-1.jpg)
+Mobile screenshot ../assets/screenshot
+/screenshot-mobile-1.jpg
 
-![Mobile screenshot 2](./assets/screenshot
-/screenshot-mobile-2.jpg)
+Mobile screenshot 2 ../assets/screenshot
+/screenshot-mobile-2.jpg
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - GitHub Pages URL: [GitHub Pages](https://phoenixfan86.github.io/Conference-ticket-generator/)
 
 ## My process
