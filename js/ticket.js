@@ -57,6 +57,15 @@ uploadArea.addEventListener('click', () => {
 	}
 })
 
+const inputName = document.getElementById('name')
+const inputEmail = document.getElementById('email')
+const inputGithub = document.getElementById('username')
+const submitBtn = document.getElementById('submit')
+const ownerEmail = document.getElementById('owner-email')
 const ownerName = document.getElementById('owner-name')
-const ownerEmail = document.getElementById('owner-Email')
-const ownerGithub = document.getElementById('github-username')
+const gitUsername = document.getElementById('github-username')
+const ticketNumber = document.getElementById('ticket-number')
+
+submitBtn.addEventListener('click', function () {
+	document.querySelector('.ticket-wrapper').classList.toggle('visible')
+})
