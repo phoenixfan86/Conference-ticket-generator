@@ -137,11 +137,25 @@ p {
 	justify-content: flex-start;
 	gap: 10px;
 }
+
 .detail img {
 	width: 13px;
 }
 
 .detail p {
+	font-size: 12px;
+}
+
+.email-error {
+	width: 100%;
+	display: none;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.email-error p {
+	color: red;
 	font-size: 12px;
 }
 

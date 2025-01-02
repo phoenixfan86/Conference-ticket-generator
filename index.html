@@ -48,10 +48,10 @@
 			</div>
 
 			<div class="input-content">
-				<label for="user-name">Full Name</label>
+				<label for="name">Full Name</label>
 				<input type="text" name="" id="name" class="input-item" value="" />
 
-				<label for="user-email">Email Address</label>
+				<label for="email">Email Address</label>
 				<input
 					type="email"
 					name=""
@@ -62,8 +62,12 @@
 					onfocus="this.placeholder = ''"
 					onblur="this.placeholder = 'enter your text'"
 				/>
+				<div class="email-error" id="email-error">
+					<img src="./assets/images/icon-info.svg" alt="" />
+					<p>Please enter a valid email address.</p>
+				</div>
 
-				<label for="github-username">GitHub Username</label>
+				<label for="username">GitHub Username</label>
 				<input
 					type="text"
 					name=""
@@ -87,7 +91,7 @@
 
 			<div class="ticket-title title">
 				<h3 class="title-gradient">
-					Congrats, <span id="name">Jonatan Kristof</span>! Your ticket is
+					Congrats, <span id="owner-name">Jonatan Kristof</span>! Your ticket is
 					ready.
 				</h3>
 				<p>
@@ -114,7 +118,7 @@
 								<img src="" alt="" id="ticket-img" />
 							</div>
 							<div class="owner-name">
-								<h4 id="owner-name">Jonatan Kristof</h4>
+								<h4 id="ticket-name">Jonatan Kristof</h4>
 								<p id="github-username">@jonatankristof0101</p>
 							</div>
 						</div>
