@@ -1,5 +1,7 @@
 # Frontend Mentor - Conference ticket generator solution
 
+![Previev](assets/images/ticket-generator_1.png)
+
 ## Overview
 
 ### The challenge
